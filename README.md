@@ -23,7 +23,7 @@ of the board:
 - Add the MAC addresses this board will be communicating with to `char macAddr[][13]`, following the format of the example mac's the array contains
 
 ### Encryption
-- ESP-NOw support encryption with up to 17 peers, but will only add up to 7 be default. In order to increase the amount, add `#define CONFIG_ESP_WIFI_ESPNOW_MAX_ENCRYPT_NUM`, followed by the number of encrypted peers you wish to support. Make sure this is near the top of the file.
+- ESP-NOW support encryption with up to 17 peers, but will only add up to 7 be default. In order to increase the amount, add `#define CONFIG_ESP_WIFI_ESPNOW_MAX_ENCRYPT_NUM`, followed by the number of encrypted peers you wish to support. Make sure this is near the top of the file.
 - e.g. `#define CONFIG_ESP_WIFI_ESPNOW_MAX_ENCRYPT_NUM 15`.
 - Set 'encryptESPNOW' to true.
 - Change the values of lmk and pmk to unique 16 byte (26 character) strings. These strings must be the same on all devices you wish to communicate with.
